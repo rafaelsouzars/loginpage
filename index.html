@@ -5,31 +5,45 @@
 	<meta name="viewport" content="width=width-device, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edger">
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<!--Repositorio da font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!--CSS da página-->
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+	<!-- favicon -->
+	<link href="assets/img/favicon.png" rel="icon" type="image/png" sizes="any">
 	<title>Página de Login</title>
 </head>
-<body>
-	<header>
-		<h1>Login<h1>
+<body class="flex-container">
+	<header class="header-container flex-row-center">
+		<h1 class="header-h">Página de login v1.0<h1>
 	</header>
-	<main id="container">
-		<section id="form-container">
-			<form id="form-login">
-				<section id="input-container">
-					<label for="username">Usuário</label>
-					<input name="username" id="username" type="text">
-					<label for="pwd">Senha</label>
-					<input name="pwd" id="pwd" type="password">
+	<main class="main-container flex-column-center">
+		<section class="form-container">
+			<form class="form-login flex-column-center">
+				<section class="form-input-container flex-column-center">
+					<span class="input-items">
+						<!--<label for="username" id="label-username">Usuário</label></br>-->
+						<input name="username" id="username" type="text" placeholder="Usuário">
+					</span>
+					<span class="input-items">
+						<!--<label for="pwd" id="label-password">Senha</label></br>-->
+						<input name="pwd" id="pwd" type="password" placeholder="Senha">
+					</span>
 				</section>
-				<section id="btn-container">
-					<input id="btn-cadastrar" type="button" value="Cadastrar">
-					<input id="btn-entrar" type="submit" value="Entrar">
+				<section class="form-btn-container">
+					<input class="btn-form" type="submit" value="Entrar">
+					<!--<input class="btn-form" type="button" value="Cadastrar">-->					
+				</section>
+				<section class="form-cadastro-container">
+					<a href="#" target="_blank">Já é cadastrado?</a>					
 				</section>
 			</form>
-		</section>
+		</section>		
 	</main>
-	<footer>
-		<h1>2024<h1>
+	<footer class="footer-container flex-row-center">
+		<h1 class="footer-h"><a href="https://rafaelsouzars.github.io" target="_blank">Rafael Souza</a> - 2024<h1>
 	</footer>
 </body>
 	<script src="assets/js/scripts.js"></script>

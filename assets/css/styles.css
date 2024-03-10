@@ -1,0 +1,176 @@
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto";	
+	box-sizing: border-box;
+}
+
+/* Variaveis */
+:root {
+	/* tema escuro */
+	--main-color-bl: #54B689;	
+	--main-text-color: #FFFFFF;	  
+	--main-bg-color: #262626;
+	--form-bg-color: #171717;
+	
+	/* tema claro */
+	--main--color-wh: blue;
+	--main-text-color-wh: #4c566a;	
+	--main-bg-color-wh: #F0F2F5;
+	--main-shadow-color-wh: #DDDFE2;
+	--main-border-color-wh: #d8dee9;
+	--footer-text-color-wh: #4c566a;
+	
+	/* bordas */
+	--border-black: 1px solid black;
+	--border-white: 1px solid white;
+}
+
+/* Geral */
+.border-black {
+	border: var(--border-black);
+}
+
+/* Flex */
+.flex-container {	
+	display: flex;	
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-content: center;
+	min-height: 100vh;	
+}
+
+.flex-column-center {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-form-column-center {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.flex-row-center {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Containers */
+.header-container {	
+	background-color: var(--main-bg-color-wh);
+	border-bottom: 4px solid var(--main-border-color-wh);	
+}
+
+.header-container .header-h {
+	color: var(--main-text-color-wh);	
+	padding: 10px;
+	margin: 10px;	
+}
+
+.main-container {
+	flex-grow: 4;
+	background-color: var(--main-bg-color-wh);
+	min-height: 300px;
+}
+
+.main-container .form-container {
+	background-color: white;	
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px var(--main-shadow-color-wh);	
+}
+
+.form-login {
+	width: 300px;
+	height: 300px;
+}
+
+.form-login .form-input-container {
+	flex: 4;
+	padding: 5px;		
+}
+
+.form-login .form-btn-container {
+	flex: 1;
+	padding: 5px;	
+}
+
+.form-login .form-cadastro-container {
+	flex: 1;
+	padding: 2px;	
+}
+
+.input-items{	
+		
+}
+
+.input-items label {
+	font-size: 14px;	
+}
+
+.input-items input {
+	display: block;		
+	font-size: 18px;
+	padding: 2px;
+	margin: 10px;
+	border-radius: 10px;
+	width: 260px;
+	height: 40px;
+}
+
+.btn-form {	
+	display: inline-block;
+	font-size: 16px;
+	padding: 5px;
+	width: 100px;
+	margin: 0px 20px;
+}
+
+.form-cadastro-container {
+	
+}
+
+.form-cadastro-container a {
+	text-decoration: none;
+	font-size: 12px;
+	color: var(--footer-text-color-wh);		
+}
+
+.form-cadastro-container a:hover {
+	text-decoration: underline;	
+}
+
+.footer-container {		
+	background-color: var(--main-bg-color-wh);
+	border-top: 4px solid var(--main-border-color-wh);
+}
+
+.footer-container .footer-h {
+	color: var(--footer-text-color-wh);
+	padding: 10px;	
+	margin: 10px;
+	font-size: 18px;
+}
+
+.footer-h a {	
+	color: var(--footer-text-color-wh);
+	text-decoration: none;
+}
+
+.footer-h a:hover {	
+	color: var(--main-text-color-wh);
+	text-decoration: underline;
+}
+
+/* Mobile */
+@media(max-width: 480px) {
+	
+	
+	
+}
